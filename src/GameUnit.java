@@ -12,10 +12,8 @@ public class GameUnit {
     protected double coef = 1;
     protected String phrase = "Вы немощи, а я нет.";
 
-    Random random = new Random();
-    double rand = random.nextDouble();
-
-    Scanner in = new Scanner(System.in);
+    protected Random random = new Random();
+    protected double rand = random.nextDouble();
 
     public GameUnit(String name,double strength, double hp, double height, double weight, String type){
         this.name = name;
