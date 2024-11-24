@@ -12,9 +12,6 @@ public class GameUnit {
     protected double coef = 1;
     protected String phrase = "Вы немощи, а я нет.";
 
-    protected Random random = new Random();
-    protected double rand = random.nextDouble();
-
     public GameUnit(String name,double strength, double hp, double height, double weight, String type){
         this.name = name;
         this.strength = strength;
@@ -89,6 +86,8 @@ public class GameUnit {
 
 //attack
 public void attack(GameUnit GU) {
+    Random random = new Random();
+    double rand = random.nextDouble();
     if (rand <= 0.5) {
         System.out.println("Слушайте сюда!");
         System.out.println(GU.getPhrase());
